@@ -12,7 +12,7 @@ You can just run ant in this directory to build and run project  - or - see comm
 * `ant compile` -- To compile only.
 * `ant build.jar` -- To compile and create a jar-file.
 * `ant` or `ant run` -- compile, build jar and run the program with default settings. 
-Notice that folder `/build` will be owerrited.   
+Notice that folder `/build` will be overwritten.   
 Edit default settings right in build.xml. Default settings for ant build project:  
 * [Port = 3000] - See line `<property name="port" value="3000"/>`
 
@@ -105,14 +105,14 @@ See [JavaDoc](http://bushed.github.io/NettyServer/javadoc/) for more details.
 
 ### Database
 
-This project uses embedded [HSQL](http://hsqldb.org/) DB. It's fast and threadsafe.
+This project uses embedded [HSQL](http://hsqldb.org/) DB. It's fast and thread-safe.
 Database files placed in folder `/localdb` in build directory.  
 
 To change DBMS edit `Database` class. 
 Besides see `StatDAO` class, that contains all SQL code, to use your specific DBMS features.  
 
 Database contains only two tables. `Connections` for each accepted request 
-and `URI` for storing text strings and agregated data.
+and `URI` for storing text strings and aggregated data.
 
 ![Database diagram](https://raw.github.com/bushed/NettyServer/master/Screens/Database_diagram.png "Database")
 
@@ -121,7 +121,7 @@ Benchmark
 
 ![Benchmark result](https://raw.github.com/bushed/NettyServer/master/Screens/benchmark.png "Benchmark")
   
-Benchmark details: CPU: Athlon x64 631 @2.6Ghz 4Cores. RAM: 8 GB. Max heap size: 512Mb.  
+Benchmark details: CPU: Athlon x64 631 @2.6Ghz 4 Cores. RAM: 8 GB. Max heap size: 512Mb.  
 Description: Apache benchmark compare the size of each response to the first received. 
 Status page generated dynamically, so obviously there is a lot of failed requests by lengths.
     
