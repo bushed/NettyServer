@@ -23,7 +23,7 @@ Summary:
 * libraries: `../lib/*.jar`
 * sources: `../src/nettyserver`
 * Main-class: `nettyserver/NettyServer`  
-See "Implementation details" below.
+See [Implementation details](#implementation-details-) below.
 
 How to use
 ----------
