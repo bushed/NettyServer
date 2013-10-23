@@ -121,6 +121,7 @@ Benchmark
 
 ![Benchmark result](https://raw.github.com/bushed/NettyServer/master/Screens/benchmark.png "Benchmark")
   
+Benchmark details: CPU: Athlon x64 631 @2.6Ghz 4Cores. RAM: 8 GB. Max heap size: 512Mb.  
 Description: Apache benchmark compare the size of each response to the first received. 
 Status page generated dynamically, so obviously there is a lot of failed requests by lengths.
     
