@@ -40,7 +40,7 @@ Default port is 3000. So, to check server, enter to address line in your browser
 
 Implementation details
 ----------------------
-Project uses Netty framework.
+Project uses [Netty framework](http://netty.io/).
 Number of threads by default = 2 * Cores.
 
 ### Project directory tree:
@@ -98,7 +98,7 @@ Main-class: NettyServer
 
 ### Database
 
-This project uses embedded HSQL DB.
+This project uses embedded [HSQL](http://hsqldb.org/) DB.
 Database files placed in folder `/localdb` in build directory.
 To change DBMS edit `Database` class. 
 Besides see `StatDAO` class, that contains all SQL code, to use your specific DBMS features.
