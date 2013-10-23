@@ -94,9 +94,9 @@ Main-class: NettyServer
 Benchmark
 ---------
 
-![Benchmark result](/Screens/Benchmark.png "Benchmark")
+![Benchmark result](https://raw.github.com/bushed/NettyServer/master/Screens/benchmark.png "Benchmark")
     
 Screens
 -------
 
-![Page status in use](/Screens/Screen_in_use.png "Status")
+![Page status in use](https://raw.github.com/bushed/NettyServer/master/Screens/Screen_in_use.png "Status")
