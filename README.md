@@ -113,6 +113,9 @@ Benchmark
 ---------
 
 ![Benchmark result](https://raw.github.com/bushed/NettyServer/master/Screens/benchmark.png "Benchmark")
+  
+Description: Apache benchmark compare the size of each response to the first received. 
+Status page generated dynamically, so obviously there is a lot of failed requests by lengths.
     
 Screens
 -------
