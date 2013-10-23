@@ -6,19 +6,19 @@ Small HTTP server with DB. This is a test job.
 How to build
 ------------
 
-You should use Apache Ant to build project. Build.xml placed in `/ant`. 
+You should use Apache Ant to build project. Build.xml placed in `/ant`.   
 You can just run ant in this directory to build and run project  - or - use the following commands:
 
 * `ant compile` -- To compile.
 * `ant build.jar` -- To create a jar-file
 * `ant run` -- to run program. Notice that folder `/build` will be owerrited 
 
-To build project without Ant
-Summary:
-JRE1.6
-libraries: `../lib/*.jar`
-sources: `../src/nettyserver`
-Main-class: `nettyserver/NettyServer`
+To build project without Ant  
+Summary:  
+* JRE1.6  
+* libraries: `../lib/*.jar`
+* sources: `../src/nettyserver`
+* Main-class: `nettyserver/NettyServer`  
 See "Implementation details" below.
 
 How to use
