@@ -1,0 +1,56 @@
+E:\Java Projects>ab -n 10000 -c 100 localhost/status
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Completed 10000 requests
+Finished 10000 requests
+
+
+Server Software:
+Server Hostname:        localhost
+Server Port:            80
+
+Document Path:          /status
+Document Length:        2961 bytes
+
+Concurrency Level:      100
+Time taken for tests:   8.989 seconds
+Complete requests:      10000
+Failed requests:        9997
+   (Connect: 0, Receive: 0, Length: 9997, Exceptions: 0)
+Write errors:           0
+Total transferred:      29828820 bytes
+HTML transferred:       29018820 bytes
+Requests per second:    1112.53 [#/sec] (mean)
+Time per request:       89.885 [ms] (mean)
+Time per request:       0.899 [ms] (mean, across all concurrent requests)
+Transfer rate:          3240.77 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.4      0       2
+Processing:     1   89 100.9     49     602
+Waiting:        1   89 100.9     49     602
+Total:          1   89 100.9     50     602
+
+Percentage of the requests served within a certain time (ms)
+  50%     50
+  66%     88
+  75%    121
+  80%    152
+  90%    245
+  95%    314
+  98%    385
+  99%    426
+ 100%    602 (longest request)

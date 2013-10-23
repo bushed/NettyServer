@@ -1,0 +1,76 @@
+<project name="NettyServer" default="run">
+	<property name="dir.build" value="../build"/>
+	<property name="dir.classes" value="${dir.build}/classes"/>
+	<property name="dir.src.java" value="../src/nettyserver"/>
+	<property name="dir.lib" value="../lib"/>
+	<property name="file.jar" value="${dir.build}/NettyServer.jar"/>
+	<property name="main.class" value="nettyserver.NettyServer"/>
+	
+	<property name="port" value="3000"/>
+	
+    <target name="clean">
+        <delete dir="${dir.build}"/>
+    </target>
+	
+	<target name="mkdirs" depends="clean">
+        <mkdir dir="${dir.classes}"/>
+    </target>
+
+	<path id="classpath">
+        <fileset dir="${dir.lib}">
+            <include name="netty-all-4.0.10.Final.jar"/>
+            <include name="hsqldb.jar"/>
+        </fileset>
+    </path>
+
+	<target name="copy.libs" depends="mkdirs">
+		<copy todir="${dir.build}/lib">
+			<path refid="classpath"/>
+		</copy>
+	</target>
+ 
+    <target name="compile" depends="mkdirs">
+        <javac srcdir="${dir.src.java}" destdir="${dir.classes}">
+			<classpath refid="classpath" />
+		 </javac>
+    </target>
+	
+	<target name="build.jar" depends="compile">
+        <jar destfile="${file.jar}"
+             basedir="${dir.classes}"
+             compress="false"
+             index="false">
+			<manifest>
+                <attribute name="Main-Class" value="${main.class}"/>
+				<attribute name="Class-Path" value="../lib/netty-all-4.0.10.Final.jar ../lib/hsqldb.jar"/>
+            </manifest>			
+        </jar>
+    </target>
+
+    <target name="run" depends="build.jar">
+        <java fork="true" classname="${main.class}">
+		    <arg value="${port}"/>
+			<classpath>                
+				<path refid="classpath"/>
+                <pathelement location="${file.jar}"/>
+            </classpath>
+	    </java>
+    </target>
+
+    <target name="execute">
+        <java classname="${main.class}">
+            <arg value="${port}"/>
+            <classpath>
+                <pathelement path="${dir.classes}"/>
+				<path refid="classpath"/>
+            </classpath>
+        </java>
+    </target>
+
+    <target name="execute-jar">
+           <java jar="${file.jar}" fork="true">
+               <arg value="${port}"/>
+           </java>
+    </target>
+
+</project>
