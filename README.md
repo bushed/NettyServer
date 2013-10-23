@@ -6,12 +6,20 @@ Small HTTP server with DB. This is a test job.
 How to build
 ------------
 
-You should use Apache Ant to build project. Build.xml placed in `./ant`. 
+You should use Apache Ant to build project. Build.xml placed in `/ant`. 
 You can just run ant in this directory to build and run project  - or - use the following commands:
 
 * [compile] -- To compile.
 * [build.jar] -- To create a jar-file
-* [run] -- to run program. Notice that folder `./build` will be owerrited 
+* [run] -- to run program. Notice that folder `/build` will be owerrited 
+
+To build project without Ant
+Summary:
+JRE1.6
+libraries: `../lib/*.jar`
+sources: `../src/nettyserver`
+Main-class: `nettyserver/NettyServer`
+See "Implementation details" below.
 
 How to use
 ----------
@@ -47,6 +55,9 @@ Implementation details
     |       hsqldb.jar
     |       netty-all-4.0.10.Final.jar
     |
+    +---localdb
+    |       *
+    |
     +---screens
     |       *.png;*.jpg
     |
@@ -62,6 +73,16 @@ Implementation details
 
 ### Description
 
+* [.ant] -- contains build script for Apache Ant
+* [.benchmark] -- Apache benchmark results
+* [.build] -- destination folder for build project
+* [.lib] -- used libraries
+* [.localdb] -- will be created automatically
+* [.screens] -- screenshots 
+* [.src] -- source code
+
+### Classes
+
 Main-class: NettyServer
 * [.NettyServer] -- Starts and stops server.
 * [.Database] -- provides access to Database
@@ -74,9 +95,9 @@ Main-class: NettyServer
 Benchmark
 ---------
 
-    GitHub::Markup.render('Benchmark/*.txt')
+![Benchmark result](/Screens/Benchmark.png "Benchmark")
     
 Screens
 -------
 
-![Page status in use](/Screens/Screen_in_use.png "Screen")
+![Page status in use](/Screens/Screen_in_use.png "Status")
