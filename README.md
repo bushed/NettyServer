@@ -73,7 +73,7 @@ Implementation details
 
 ### Description
 
-* [.ant] -- contains build script for Apache Ant
+* [.ant](https://github.com/bushed/NettyServer/blob/master/ant/) -- contains build script for Apache Ant
 * [.benchmark] -- Apache benchmark results
 * [.build] -- destination folder for build project
 * [.lib] -- used libraries
