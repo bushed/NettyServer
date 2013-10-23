@@ -6,7 +6,7 @@ Small HTTP server with DB. This is a test job.
 How to build
 ------------
 
-You should use Apache Ant to build project. Build.xml placed in `/ant`.   
+You should use [Apache Ant](http://ant.apache.org/) to build project. `Build.xml` placed in `/ant`.   
 You can just run ant in this directory to build and run project  - or - use see command list:
 
 * `ant compile` -- To compile only.
@@ -36,7 +36,11 @@ If everything ok, program will type:
     Web server started at port 3000
     type "stop" to stop server
 
-Default port is 3000. So, to check server, enter to address line in your browser `http://localhost:3000/status`
+Default port is 3000. So, to check server, enter to address line in your browser `http://localhost:3000/status`.  
+According to the test job features list, there is 3 pages:
+* `/status` -- shows the statistic page
+* `/hello` -- after 10 seconds says "Hello page"
+* `/redirect?url=<url>` -- redirects to the specified in GET request URL.
 
 Implementation details
 ----------------------
@@ -121,3 +125,4 @@ Screens
 -------
 
 ![Page status in use](https://raw.github.com/bushed/NettyServer/master/Screens/Screen_in_use.png "Status")
+![Start server](https://raw.github.com/bushed/NettyServer/master/Screens/use.png "server")
