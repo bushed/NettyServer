@@ -44,7 +44,7 @@ According to the test job features list, there is 3 pages:
 * `/redirect?url=<url>` -- redirects to the specified in GET request URL.
 
 Implementation details {#implementation}
-----------------------
+======================
 Project uses [Netty framework](http://netty.io/).
 Number of threads by default = 2 * Cores.
 
