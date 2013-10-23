@@ -63,13 +63,13 @@ Implementation details
 ### Description
 
 Main-class: NettyServer
-[NettyServer] -- Starts and stops server.
-[Database] -- provides access to Database
-[HttpServerInitializer] -- specify pipeline factory, means how we will handle connections
-[HttpServerHandler] -- Http handler. Accepts http requests and responds to them.
-[ManualDBForm] -- Debug tool.
-[StatDAO] -- implements methods to work with Database.
-[StatusHolder] -- synchronized counter
+* [.NettyServer] -- Starts and stops server.
+* [.Database] -- provides access to Database
+* [.HttpServerInitializer] -- specify pipeline factory, means how we will handle connections
+* [.HttpServerHandler] -- Http handler. Accepts http requests and responds to them.
+* [.ManualDBForm] -- Debug tool.
+* [.StatDAO] -- implements methods to work with Database.
+* [.StatusHolder] -- synchronized counter
 
 Benchmark
 ---------
