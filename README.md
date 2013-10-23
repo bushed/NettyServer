@@ -101,6 +101,8 @@ Main-class: NettyServer
 * `StatDAO` -- implements methods to work with Database.
 * `StatusHolder` -- synchronized counter
 
+See [JavaDoc](http://bushed.github.io/NettyServer/javadoc/) for more details.
+
 ### Database
 
 This project uses embedded [HSQL](http://hsqldb.org/) DB. It's fast and threadsafe.
