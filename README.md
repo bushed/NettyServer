@@ -123,6 +123,9 @@ Status page generated dynamically, so obviously there is a lot of failed request
     
 Screens
 -------
+Status page in browser.  
+![Page status in use](https://raw.github.com/bushed/NettyServer/master/Screens/Screen_in_use.png "Status")  
+  
+Start server in console.  
+![Start server](https://raw.github.com/bushed/NettyServer/master/Screens/use.png "server")  
 
-![Page status in use](https://raw.github.com/bushed/NettyServer/master/Screens/Screen_in_use.png "Status")
-![Start server](https://raw.github.com/bushed/NettyServer/master/Screens/use.png "server")
