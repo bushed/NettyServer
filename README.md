@@ -23,7 +23,7 @@ Summary:
 * libraries: `../lib/*.jar`
 * sources: `../src/nettyserver`
 * Main-class: `nettyserver/NettyServer`  
-See [Implementation details](#implementation) below.
+See "Implementation details" below.
 
 How to use
 ----------
@@ -43,8 +43,8 @@ According to the test job features list, there is 3 pages:
 * `/hello` -- after 10 seconds says "Hello page"
 * `/redirect?url=<url>` -- redirects to the specified in GET request URL.
 
-Implementation details {#implementation}
-======================
+Implementation details 
+----------------------
 Project uses [Netty framework](http://netty.io/).
 Number of threads by default = 2 * Cores.
 
