@@ -6,6 +6,7 @@
 	<property name="file.jar" value="${dir.build}/NettyServer.jar"/>
 	<property name="main.class" value="nettyserver.NettyServer"/>
 	
+	<!-- Default settings for program -->
 	<property name="port" value="3000"/>
 	
     <target name="clean">
