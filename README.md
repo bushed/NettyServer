@@ -80,7 +80,7 @@ Number of threads by default = 2 * Cores.
                 StatDAO.java
                 StatusHolder.java
 
-### Description
+### Folders
 
 * [ant](https://github.com/bushed/NettyServer/blob/master/ant/) -- contains build script for Apache Ant
 * [benchmark](https://github.com/bushed/NettyServer/blob/master/Benchmark/) -- Apache benchmark results
