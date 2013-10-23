@@ -40,6 +40,8 @@ Default port is 3000. So, to check server, enter to address line in your browser
 
 Implementation details
 ----------------------
+Project uses Netty framework.
+Number of threads by default = 2 * Cores.
 
 ### Project directory tree:
 
@@ -93,6 +95,15 @@ Main-class: NettyServer
 * `ManualDBForm` -- Debug tool.
 * `StatDAO` -- implements methods to work with Database.
 * `StatusHolder` -- synchronized counter
+
+### Database
+
+This project uses embedded HSQL DB.
+Database files placed in folder `/localdb` in build directory.
+To change DBMS edit `Database` class. 
+Besides see `StatDAO` class, that contains all SQL code, to use your specific DBMS features.
+
+![Database diagram](https://raw.github.com/bushed/NettyServer/master/Screens/Database_diagram.png "Database")
 
 Benchmark
 ---------
