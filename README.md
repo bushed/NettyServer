@@ -83,11 +83,11 @@ Number of threads by default = 2 * Cores.
 ### Description
 
 * [ant](https://github.com/bushed/NettyServer/blob/master/ant/) -- contains build script for Apache Ant
-* [benchmark](https://github.com/bushed/NettyServer/blob/master/benchmark/) -- Apache benchmark results
+* [benchmark](https://github.com/bushed/NettyServer/blob/master/Benchmark/) -- Apache benchmark results
 * [build](https://github.com/bushed/NettyServer/blob/master/build/) -- destination folder for build project
 * build/localdb -- will be created automatically
 * [lib](https://github.com/bushed/NettyServer/blob/master/lib/) -- used libraries
-* [screens](https://github.com/bushed/NettyServer/blob/master/screens/) -- screenshots 
+* [screens](https://github.com/bushed/NettyServer/blob/master/Screens/) -- screenshots 
 * [src](https://github.com/bushed/NettyServer/blob/master/src/) -- source code
 
 ### Classes
