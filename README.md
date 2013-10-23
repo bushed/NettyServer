@@ -98,10 +98,12 @@ Main-class: NettyServer
 
 ### Database
 
-This project uses embedded [HSQL](http://hsqldb.org/) DB.
-Database files placed in folder `/localdb` in build directory.
+This project uses embedded [HSQL](http://hsqldb.org/) DB. It's fast and threadsafe.
+Database files placed in folder `/localdb` in build directory.  
 To change DBMS edit `Database` class. 
 Besides see `StatDAO` class, that contains all SQL code, to use your specific DBMS features.
+Database contains only two tables. `Connections` for each accepted request 
+and `URI` for storing text strings and agregated data.
 
 ![Database diagram](https://raw.github.com/bushed/NettyServer/master/Screens/Database_diagram.png "Database")
 
