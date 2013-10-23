@@ -9,9 +9,9 @@ How to build
 You should use Apache Ant to build project. Build.xml placed in `/ant`. 
 You can just run ant in this directory to build and run project  - or - use the following commands:
 
-* [compile] -- To compile.
-* [build.jar] -- To create a jar-file
-* [run] -- to run program. Notice that folder `/build` will be owerrited 
+* `ant compile` -- To compile.
+* `ant build.jar` -- To create a jar-file
+* `ant run` -- to run program. Notice that folder `/build` will be owerrited 
 
 To build project without Ant
 Summary:
@@ -48,15 +48,14 @@ Implementation details
     |
     +---build
     |   |    NettyServer.jar
-    |   \---classes
-    |           *.class    
+    |   +---classes
+    |   |       *.class    
+    |   \---localdb
+    |           *
     |
     +---lib
     |       hsqldb.jar
     |       netty-all-4.0.10.Final.jar
-    |
-    +---localdb
-    |       *
     |
     +---screens
     |       *.png;*.jpg
@@ -73,24 +72,24 @@ Implementation details
 
 ### Description
 
-* [.ant](https://github.com/bushed/NettyServer/blob/master/ant/) -- contains build script for Apache Ant
-* [.benchmark] -- Apache benchmark results
-* [.build] -- destination folder for build project
-* [.lib] -- used libraries
-* [.localdb] -- will be created automatically
-* [.screens] -- screenshots 
-* [.src] -- source code
+* [ant](https://github.com/bushed/NettyServer/blob/master/ant/) -- contains build script for Apache Ant
+* [benchmark](https://github.com/bushed/NettyServer/blob/master/benchmark/) -- Apache benchmark results
+* [build](https://github.com/bushed/NettyServer/blob/master/build/) -- destination folder for build project
+* build/localdb -- will be created automatically
+* [lib](https://github.com/bushed/NettyServer/blob/master/lib/) -- used libraries
+* [screens](https://github.com/bushed/NettyServer/blob/master/screens/) -- screenshots 
+* [src](https://github.com/bushed/NettyServer/blob/master/src/) -- source code
 
 ### Classes
 
 Main-class: NettyServer
-* [.NettyServer] -- Starts and stops server.
-* [.Database] -- provides access to Database
-* [.HttpServerInitializer] -- specify pipeline factory, means how we will handle connections
-* [.HttpServerHandler] -- Http handler. Accepts http requests and responds to them.
-* [.ManualDBForm] -- Debug tool.
-* [.StatDAO] -- implements methods to work with Database.
-* [.StatusHolder] -- synchronized counter
+* `NettyServer` -- Starts and stops server.
+* `Database` -- provides access to Database
+* `HttpServerInitializer` -- specify pipeline factory, means how we will handle connections
+* `HttpServerHandler` -- Http handler. Accepts http requests and responds to them.
+* `ManualDBForm` -- Debug tool.
+* `StatDAO` -- implements methods to work with Database.
+* `StatusHolder` -- synchronized counter
 
 Benchmark
 ---------
