@@ -57,7 +57,7 @@ Number of threads by default = 2 * Cores.
     |       *.txt
     |
     +---build
-    |   |    NettyServer.jar
+    |   |   NettyServer.jar
     |   +---classes
     |   |       *.class    
     |   \---localdb
