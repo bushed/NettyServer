@@ -12,9 +12,10 @@ You can just run ant in this directory to build and run project  - or - use see 
 * `ant compile` -- To compile only.
 * `ant build.jar` -- To compile and create a jar-file.
 * `ant` or `ant run` -- compile, build jar and run the program with default settings. 
-Notice that folder `/build` will be owerrited. Default settings for ant build project:  
-* [Port = 3000]  
-Edit default settings right in build.xml. See line `<property name="port" value="3000"/>`
+Notice that folder `/build` will be owerrited.   
+Edit default settings right in build.xml. Default settings for ant build project:  
+* [Port = 3000] - See line `<property name="port" value="3000"/>`
+
 
 To build project without Ant  
 Summary:  
