@@ -7,7 +7,7 @@ How to build
 ------------
 
 You should use [Apache Ant](http://ant.apache.org/) to build project. `Build.xml` placed in `/ant`.   
-You can just run ant in this directory to build and run project  - or - use see command list:
+You can just run ant in this directory to build and run project  - or - see command list:
 
 * `ant compile` -- To compile only.
 * `ant build.jar` -- To compile and create a jar-file.
